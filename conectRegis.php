@@ -9,8 +9,17 @@ function connectDB(){
 
     return $conexion;
 } 
+echo"HOLO"
+if ($conexion==true) 
+{ 
+   echo "conectado"; 
+} 
+else 
+{ 
+  echo "desconectado"; 
+}  
 
-if($submit == "Registrar"){
+/*if($submit == "Registrar"){
     connectDB();
 $insert = "INSERT INTO usuarios ('id', 'nombre', 'correo', 'descripcion')
 VALUES ('$id','$nombre', '$correo', '$des')";
@@ -19,4 +28,4 @@ if ($insert == TRUE) {
 } else {
     echo "Error: " . $insert . "<br>" . $connectDB->error;
 }
-}
+}*/
