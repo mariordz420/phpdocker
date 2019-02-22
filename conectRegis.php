@@ -9,12 +9,12 @@ function connectDB(){
 
     return $conexion;
 } 
-
-$insert = "INSERT INTO usuarios ('', 'nombre', 'correo', 'descripcion')
-VALUES ('$nombre', '$correo', '$des')";
-
-if ($connectDB->query($insert) === TRUE) {
+if($submit == "Registrar"){
+$insert = "INSERT INTO usuarios ('id', 'nombre', 'correo', 'descripcion')
+VALUES ('$id','$nombre', '$correo', '$des')";
+if ($insert == TRUE) {
     echo "Ya eres MRJENKINS";
 } else {
     echo "Error: " . $insert . "<br>" . $connectDB->error;
+}
 }
