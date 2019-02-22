@@ -4,12 +4,14 @@ function connectDB(){
     $user = "root";
     $pass = "root";
     $bd = "ladelmario";
-    $conexion = mysqli_connect($server, $user, $pass,$bd) 
+    $conexion = mysql_connect($server, $user, $pass,$bd) 
         or die("No se puede conectar a base de datos");
 
     return $conexion;
 } 
+
 if($submit == "Registrar"){
+    connectDB();
 $insert = "INSERT INTO usuarios ('id', 'nombre', 'correo', 'descripcion')
 VALUES ('$id','$nombre', '$correo', '$des')";
 if ($insert == TRUE) {
