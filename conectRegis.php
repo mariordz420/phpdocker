@@ -9,8 +9,8 @@ function connectDB(){
 
     return $conexion;
 } 
-echo"HOLO"
-if ($conexion==true) 
+$lafuncion = connectDB();
+if ($lafuncion == true) 
 { 
    echo "conectado"; 
 } 
