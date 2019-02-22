@@ -9,6 +9,8 @@ function connectDB(){
 
     return $conexion;
 } 
+?>
+<?php
 $lafuncion = connectDB();
 if ($lafuncion == true) 
 { 
