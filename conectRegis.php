@@ -1,8 +1,8 @@
 <?php
 function connectDB(){
     $server = "http://ec2-52-35-30-87.us-west-2.compute.amazonaws.com:8889/";
-    $user = "root";
-    $pass = "root";
+    $user = "";
+    $pass = "";
     $bd = "ladelmario";
     $conexion = mysql_connect($server, $user, $pass,$bd) 
         or die("No se puede conectar a base de datos");
